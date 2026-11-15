@@ -1,0 +1,6 @@
+Escenario / Arquitectura,Accuracy,F1-Score (Macro),Tamaño (MB),Latencia (ms/img),Viabilidad Móvil
+MobileNetV2 (Base Keras),92.75%,0.9261,28.4,42.15,Aceptable (Keras Runtime)
+MobileNetV2 (TFLite optimizado),92.40%,0.9228,8.85,14.2,Óptima (Edge Nativo)
+Ensamble por Promedio (Soft Voting),94.10%,0.9402,126.8,118.5,Baja (Pesado)
+Ensamble Ponderado (Weighted Voting),94.85%,0.9478,142.2,125.1,Baja (Pesado)
+Modelo Híbrido (YOLOv8n + MobileNetV2),95.60%,0.9542,38.25,62.4,Media (Requiere NPU / API)
